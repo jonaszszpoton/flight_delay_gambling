@@ -23,7 +23,7 @@ The project is organized as follows:
 ├── main.ipynb                    # Jupyter Notebook with detailed, step-by-step analysis.
 ├── main.py                       # A streamlined Python script for executing the analysis and prediction.
 ├── requirements.txt              # A file listing the Python dependencies for the project.
-└── diagram (1).svg               # Data pipeline 
+└── pipeline.svg               # Data pipeline 
 
 /data
 ├─ raw_data.csv                   # The primary dataset used for the analysis.
@@ -47,15 +47,14 @@ To run this project, follow these steps:
     *   **Option A: Run the Python Script**
         For a direct execution of the data processing and model evaluation, run the script:
         ```bash
-        python flight_delay_analysis.py
+        python main.py
         ```
-        This will print the model's performance metrics (accuracy, confusion matrix, and classification report) to the console.
+        This will generate data, train the models, print the model's performance metrics to the console, as well as simulating the financial outcomes based on predictions.
 
-Note: may generate errors
 
     *   **Option B: Use the Jupyter Notebook**
         For an interactive, step-by-step exploration of the analysis, start the Jupyter Notebook server:
         ```bash
         jupyter notebook
         ```
-        Then, open the `flight_delay_analysis.ipynb` file in your browser.
+        Then, open the `main.ipynb` file in your browser.
